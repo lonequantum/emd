@@ -19,6 +19,6 @@ With no configuration found, the program will report the parameters to use in th
 ## Use
 First, the `evdev` module must be loaded.  
 Run `emd /dev/input/event<X>` to start monitoring the events reported in `/dev/input/event<X>`.
-If you don't use any configuration file (or if it's empty), it will report (via syslog) the *type*, *code* and *value* for each detected event, such as a pressed key. You can get the output directly in your terminal (instead of /var/log/messages) by launching the program in foreground with `NODAEMON=1 emd /dev/…`.  
+If you don't use any configuration file (or if it's empty), it will report (via syslog) the **type**, **code** and **value** for each detected event, such as a pressed key. You can get the output directly in your terminal (instead of `/var/log/messages`) by launching the program in foreground with `NODAEMON=1 emd /dev/…`.  
 Otherwise, the dist file shows an example of key-action mapping (one per line). Remember, these actions are shell commands (passed to system()) that may need stream redirections and/or the use of a trailing `&` for non-blocking actions.  
 A running instance of EMD works with one evdev input file only (`/dev/input/event<X>`). If the events you want to monitor are managed across multiple files, you have to launch multiple instances of EMD, each with its evdev file as parameter.
