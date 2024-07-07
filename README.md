@@ -24,4 +24,4 @@ Otherwise, the dist file shows an example of key-action mapping (one per line). 
 A running instance of EMD works with one evdev input file only (`/dev/input/event<X>`). If the events you want to monitor are managed across multiple files, you have to launch multiple instances of EMD, each with its evdev file as parameter.
 
 EMD exits when it receives signals 2 (SIGINT) and 15 (SIGTERM).  
-Signal 6 (SIGABRT) is used internaly to exit on errors.
+Signal 6 (SIGABRT) is used internally to exit on errors.
