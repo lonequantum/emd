@@ -1,15 +1,15 @@
 # EMD
 Event Mapping Daemon for systems using evdev
 
-This is a simple daemon C program in less than 400 SLOC that links actions (shell commands) to events managed by [https://www.freedesktop.org/wiki/Software/libevdev/](evdev).  
+This is a simple daemon C program in less than 400 SLOC that links actions (shell commands) to events managed by [evdev](https://www.freedesktop.org/wiki/Software/libevdev/).  
 It's _almost_ POSIX compliant (use of daemon(), vsyslog()) and should compile, in theory, on any Linux system and FreeBSD.  
 It should work system-wide, under kernel console mode or X or Wayland or whatever you use.  
 It's the very first (alpha) version of something that might be rewritten from scratch some day.
 
 ## Author's primary use case
-I use [https://alpinelinux.org/](Alpine Linux) on my laptop, mainly in kernel console mode with [https://github.com/tmux/](tmux).  
+I use [Alpine Linux](https://alpinelinux.org/) on my laptop, mainly in kernel console mode with [tmux](https://github.com/tmux/).  
 Even in this mode, I want all my "Fn" keys to be assigned to what their symbols mean. Some are already mapped, some aren't (for example the sound volume keys).  
-There are maybe several solutions to adress this problem, but I wanted something simple. I tried [https://github.com/thkala/actkbd](actkbd), but it does not work on my system.  
+There are maybe several solutions to adress this problem, but I wanted something simple. I tried [actkbd](https://github.com/thkala/actkbd), but it does not work on my system.  
 EMD was born :)
 
 ## Build
